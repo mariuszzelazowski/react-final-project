@@ -1,0 +1,32 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+@import "../settings/mixins";
+
+
+.logo-section-container {
+  text-align: center;
+  padding-bottom: 2em;
+
+}
+
+.logo-img {
+  padding-top: .3em;
+  width: 15em;
+}
+
+a {
+  font-family: $logo-font;
+  .logo-title {
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 0 0 1.6em rgba(255, 147, 150, 1);
+    .logo-title-first {
+      font-size: 4em;
+      color: $tomato-color;
+    }
+    .logo-title-second {
+      font-size: 3em;
+      color: $light-gray-color;
+    }
+  }
+}

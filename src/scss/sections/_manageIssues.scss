@@ -1,0 +1,60 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+@import "../settings/mixins";
+
+
+.tasks-list-container {
+  padding: 2em 0 .3em 0;
+  background-color: $white-color;
+  margin: 0 auto;
+  width: 85%;
+  @include mainBorderRadius;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .section-header-title {
+    padding-bottom: .8em;
+    color: $middle-gray-color;
+
+    &:after {
+      content: "";
+      width: 7.5em;
+      height: .1em;
+      background: $middle-gray-color;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: -20%;
+      left: 50%;
+    }
+  }
+
+  .tasks-list-button {
+    margin-bottom: .7em;
+    width: 10em;
+    height: 1.6em;
+    background-color: $middle-gray-color;
+    @include mainBorderRadius;
+    @include mainBorder($light-gray-color);
+    font-size: 1.5em;
+    font-weight: 700;
+    color: $white-color;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+
+    &:hover {
+      background-color: $tomato-color;
+      color: $white-color;
+      @include mainBorder($light-gray-color);
+      transition: .7s;
+    }
+
+  }
+}
+
+.tasks-list-button:last-child {
+  background-color: $lighter-gray-color;
+  color: $middle-gray-color;
+  @include mainBorder($middle-gray-color);
+}

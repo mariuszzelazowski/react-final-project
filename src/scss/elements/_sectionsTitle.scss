@@ -1,0 +1,12 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+@import "../settings/mixins";
+
+.section-header-title {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: $tomato-color;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}

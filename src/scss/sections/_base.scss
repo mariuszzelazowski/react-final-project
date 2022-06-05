@@ -1,0 +1,61 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+@import "../settings/mixins";
+
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  font-family: $oswald-font;
+}
+
+a {
+  text-decoration: none;
+}
+
+.App {
+  height: 100vh;
+  background-color: $lighter-gray-color;
+  padding: 1em 0;
+
+  .container {
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: $light-gray-color;
+    @include mainBorderRadius;
+    @include mainBorder($white-color);
+    @include notebook {
+      width: 100%;
+    }
+    display: flex;
+
+    .left-side-container {
+      width: 26em;
+      height: 100%;
+      background-color: $dark-gray-color;
+      @include differentBorderRadius(1em, 0, 1em, 0);
+      border-right: $white-color .5px solid;
+      border-bottom: $white-color .05em solid;
+    }
+
+    .middle-side-container {
+      width: 110em;
+      height: 100%;
+      background-color: $light-gray-color;
+    }
+
+    .right-side-container {
+      min-width: 20em;
+      width: 23em;
+      height: 100%;
+      background-color: $light-gray-color;
+      @include differentBorderRadius(0, 1em, 0, 1em);
+      border-left: $white-color .5px solid;
+    }
+  }
+}
+
+

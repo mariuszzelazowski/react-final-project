@@ -1,0 +1,23 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+@import "../settings/mixins";
+
+
+.settings-section-option-button {
+  width: 10em;
+  height: 2.2em;
+  background-color: $white-color;
+  @include mainBorderRadius;
+  @include mainBorder($middle-gray-color);
+  font-size: 1.3em;
+  font-weight: 700;
+  color: $middle-gray-color;
+  letter-spacing: .1em;
+
+  &:hover {
+    background-color: $tomato-color;
+    color: $white-color;
+    @include mainBorder($lighter-gray-color);
+    transition: .7s;
+  }
+}

@@ -1,0 +1,40 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+@import "../settings/mixins";
+
+
+.session-info-section-container {
+  padding: 3em 0 .5em 0;
+  text-align: center;
+
+  .section-header-title {
+    padding-bottom: .7em;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 9em;
+      height: .08em;
+      background: $tomato-color;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: -20%;
+      left: 50%;
+    }
+  }
+  .session-info-section-box {
+    padding-bottom: .6em;
+    font-size: 1.3em;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+
+    .session-info-parameter-title {
+      color: $lighter-gray-color;
+    }
+    .session-info-parameter-value {
+      padding-left: .2em;
+      color: $white-color;
+    }
+  }
+}

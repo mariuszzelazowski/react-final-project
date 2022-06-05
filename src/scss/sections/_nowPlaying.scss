@@ -1,0 +1,31 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+@import "../settings/mixins";
+
+.now-playing-section-container {
+  padding: .6em .1em;
+  background-color: $tomato-color;
+  border-top: $white-color .05em solid;
+  @include differentBorderRadius(0, 0, 1em, 0);
+  .now-playing-section-body {
+    margin: 0 auto;
+    width: 95%;
+    background: url("../../images/poster.png") no-repeat center/cover;
+    @include mainBorderRadius;
+    @include mainBorder($white-color);
+    .now-playing-text-box {
+      background-color: $lighter-gray-color;
+      padding: .3em .8em .3em .8em ;
+      border-top: $white-color .05em solid;
+      @include differentBorderRadius(0, 0, 1em, 1em);
+      .now-playing-title {
+        color: $tomato-color;
+        font-weight: 500;
+        letter-spacing: .01em;
+        .now-playing-title-value {
+          color: $middle-gray-color;
+        }
+      }
+    }
+  }
+}

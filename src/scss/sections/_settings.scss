@@ -1,0 +1,47 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+@import "../settings/mixins";
+
+
+.settings-section-container {
+  padding-top: 1.5em;
+  text-align: center;
+
+  .section-header-title {
+    padding-bottom: .3em;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 9em;
+      height: .1em;
+      background: $tomato-color;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: -20%;
+      left: 50%;
+    }
+  }
+
+  .settings-section-option-box {
+    .settings-section-option-label {
+      font-size: 1.7em;
+      font-weight: 500;
+      color: $lighter-gray-color;
+      padding: .5em 0 .2em 0;
+      text-shadow: 1px 0 10px rgba(255, 150, 150, 1);
+    }
+  }
+}
+
+.settings-section-tooltip-form-box {
+  padding: .7em 0 .2em 0;
+  font-size: 1.7em;
+  font-weight: 500;
+  color: $lighter-gray-color;
+  text-shadow: 1px 0 10px rgba(255, 150, 150, 1);
+
+  .settings-section-tooltip-title {
+    padding-left: .4em;
+  }
+}

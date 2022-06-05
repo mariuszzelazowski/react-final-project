@@ -1,0 +1,107 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+@import "../settings/mixins";
+
+.sort-filter-section {
+  background-color: $light-gray-color;
+  @include mainBorderRadius;
+  @include mainBorder($white-color);
+  margin: 1em auto .6em auto;
+  width: 95%;
+
+  .sort-section-container {
+    padding: 1.4em 0 .5em;
+
+
+    .section-header-title {
+      position: relative;
+
+      &:after {
+        content: "";
+        width: 10em;
+        height: .09em;
+        background: $tomato-color;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: -20%;
+        left: 50%;
+      }
+    }
+
+    .sort-section-body {
+      font-size: 1.7em;
+      font-weight: 500;
+      color: $lighter-gray-color;
+      padding: 0 1.3em 0 1.4em;
+      text-shadow: 1px 0 10px rgba(255, 150, 150, 1);
+      text-align: center;
+    }
+  }
+
+  .filter-section-container {
+    padding: 1.4em 0 1.5em;
+
+    .section-header-title {
+      padding-bottom: .3em;
+      position: relative;
+
+      &:after {
+        content: "";
+        width: 10em;
+        height: .08em;
+        background: $tomato-color;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: -20%;
+        left: 50%;
+      }
+    }
+  }
+
+  .filter-section-body {
+    font-size: 1.7em;
+    font-weight: 500;
+    color: $lighter-gray-color;
+    padding: .5em 0 .2em 0;
+    text-shadow: 1px 0 10px rgba(255, 150, 150, 1);
+    text-align: center;
+  }
+}
+
+.sort-section-form {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  div {
+    padding-top: .4em;
+
+    label {
+      padding-left: .5em;
+    }
+  }
+}
+
+.filter-section-form {
+  padding: 0 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .filter-section-form-row-first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input {
+      margin-left: 2em;
+    }
+  }
+
+  .filter-section-form-row-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
