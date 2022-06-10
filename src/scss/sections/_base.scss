@@ -16,29 +16,27 @@ a {
 }
 
 .App {
-  height: 100vh;
   background-color: $lighter-gray-color;
   padding: 1em 0;
 
   .container {
+    box-shadow: 13px 47px 100px 40px rgba(218, 72, 72, 0.67);
     width: 1500px;
-    height: 100%;
     margin: 0 auto;
     background-color: $light-gray-color;
     @include mainBorderRadius;
-    @include mainBorder($white-color);
+    @include mainBorder($middle-gray-color);
     @include notebook {
       width: 100%;
     }
     display: flex;
 
     .left-side-container {
+      min-width: 23em;
       width: 26em;
-      height: 100%;
       background-color: $dark-gray-color;
       @include differentBorderRadius(1em, 0, 1em, 0);
-      border-right: $white-color .5px solid;
-      border-bottom: $white-color .05em solid;
+      border-right: $middle-gray-color .5px solid;
     }
 
     .middle-side-container {
@@ -53,9 +51,7 @@ a {
       height: 100%;
       background-color: $light-gray-color;
       @include differentBorderRadius(0, 1em, 0, 1em);
-      border-left: $white-color .5px solid;
     }
   }
 }
-
 

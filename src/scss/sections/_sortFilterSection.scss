@@ -2,24 +2,26 @@
 @import "../settings/fonts";
 @import "../settings/mixins";
 
-.sort-filter-section {
+.sort-filter-section-container {
+  box-shadow: 13px 47px 100px 40px rgba(218, 72, 72, 0.67);
   background-color: $light-gray-color;
   @include mainBorderRadius;
-  @include mainBorder($white-color);
+  @include mainBorder($middle-gray-color);
   margin: 1em auto .6em auto;
   width: 95%;
+  padding: 2em;
 
-  .sort-section-container {
-    padding: 1.4em 0 .5em;
-
+  .sort-filter-section-headers {
+    display: flex;
+    justify-content: space-between;
 
     .section-header-title {
-      position: relative;
+      padding: 0 .4em .3em .4em;
 
       &:after {
         content: "";
-        width: 10em;
-        height: .09em;
+        width: 5em;
+        height: .1em;
         background: $tomato-color;
         position: absolute;
         transform: translate(-50%, -50%);
@@ -27,81 +29,83 @@
         left: 50%;
       }
     }
+  }
 
-    .sort-section-body {
+  .sort-filter-section-forms {
+    display: flex;
+    justify-content: space-evenly;
+
+    .sort-section-form-container,
+    .filter-section-form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
       font-size: 1.7em;
       font-weight: 500;
       color: $lighter-gray-color;
-      padding: 0 1.3em 0 1.4em;
       text-shadow: 1px 0 10px rgba(255, 150, 150, 1);
       text-align: center;
     }
   }
+}
 
-  .filter-section-container {
-    padding: 1.4em 0 1.5em;
+.sort-section-form-box,
+.filter-section-form-box {
+  padding-top: .5em;
+}
 
-    .section-header-title {
-      padding-bottom: .3em;
-      position: relative;
+//elements
 
-      &:after {
-        content: "";
-        width: 10em;
-        height: .08em;
-        background: $tomato-color;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: -20%;
-        left: 50%;
-      }
+.sort-section-form-box {
+  cursor: pointer;
+  user-select: none;
+  .sort-section-form-radio-input {
+    width: 1.1em;
+    height: 1.1em;
+    border: .1em solid $middle-gray-color;
+    border-radius: 50%;
+    appearance: none;
+    background-color: $white-color;
+    cursor: pointer;
+    //opacity:0;
+
+    &:hover {
+      background-color: $dark-gray-color;
     }
-  }
 
-  .filter-section-body {
-    font-size: 1.7em;
-    font-weight: 500;
-    color: $lighter-gray-color;
-    padding: .5em 0 .2em 0;
-    text-shadow: 1px 0 10px rgba(255, 150, 150, 1);
-    text-align: center;
+  .sort-section-form-radio-label {
+    padding-left: .5em;
   }
 }
 
-.sort-section-form {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
 
-  div {
-    padding-top: .4em;
 
-    label {
-      padding-left: .5em;
-    }
-  }
+
+
+.filter-section-form-checkbox-label {
+  padding-left: .5em;
+  cursor: pointer;
 }
 
-.filter-section-form {
-  padding: 0 3em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 
-  .filter-section-form-row-first {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    input {
-      margin-left: 2em;
-    }
-  }
-
-  .filter-section-form-row-second {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }
 
+
+
+.filter-section-form-checkbox-input {
+  width: 1.1em;
+  height: 1.1em;
+  border: .1em solid $middle-gray-color;
+  border-radius: .3em;
+  background-color: $white-color;
+  appearance: none;
+  cursor: pointer;
+
+  &:hover {
+    background: $white-color url("../../images/checked.svg") center/contain no-repeat;
+  }
+
+  &:checked {
+    background: $white-color url("../../images/checked.svg") center/contain no-repeat;
+  }
+}

@@ -41,6 +41,21 @@
   color: $lighter-gray-color;
   text-shadow: 1px 0 10px rgba(255, 150, 150, 1);
 
+
+
+  .settings-section-tooltip-checkbox {
+    width: 1.1em;
+    height: 1.1em;
+    border: .1em solid $middle-gray-color;
+    border-radius: .3em;
+    cursor: pointer;
+    background-color: $white-color;
+    appearance: none;
+    &:checked {
+      background: $white-color url("../../images/checked.svg") center/contain no-repeat;
+    }
+
+  }
   .settings-section-tooltip-title {
     padding-left: .4em;
   }

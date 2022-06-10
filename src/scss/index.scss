@@ -6,11 +6,10 @@
 @import "buttons/settingsButtons";
 
 @import "elements/controlBar";
-@import "elements/controlcons";
+@import "elements/controlIcons";
 @import "elements/createParameters";
 @import "elements/listParameters";
 @import "elements/logo";
-@import "elements/searchForm";
 @import "elements/sectionsTitle";
 @import "elements/statusDropdown";
 @import "elements/tooltips";
@@ -27,6 +26,7 @@
 @import "sections/settings";
 @import "sections/videoContainer";
 @import "sections/videosList";
+@import "sections/preLoadingPage";
 
 @import "settings/colors";
 @import "settings/fonts";

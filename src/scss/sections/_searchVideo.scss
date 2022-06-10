@@ -5,6 +5,7 @@
 
 .search-section-container {
   padding: 2em 0 .8em 0;
+  margin-bottom: 2.2em;
 
   .section-header-title {
     padding-bottom: .6em;
@@ -28,26 +29,25 @@
   text-align: center;
   font-size: 1.5em;
 
-  input {
-    padding: .4em 1em;
+  .search-form-input {
+    font-weight: 600;
+    padding: .4em 2.5em;
     width: 95%;
     @include formsBorderRadius;
-    @include mainBorder($white-color);
+    @include mainBorder($middle-gray-color);
     background-color: $light-gray-color;
     color: $lighter-gray-color;
 
     &::placeholder {
-      padding-left: 1em;
       color: $lighter-gray-color;
     }
-
   }
 }
 
 .search-form-img {
   padding-top: .2em;
   padding-left: .2em;
-  position: absolute;;
+  position: absolute;
   animation: spin 1.5s linear infinite alternate;
   @keyframes spin {
     from {

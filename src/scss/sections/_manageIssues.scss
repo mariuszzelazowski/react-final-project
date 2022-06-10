@@ -4,7 +4,8 @@
 
 
 .tasks-list-container {
-  padding: 2em 0 .3em 0;
+  padding-top: 1.5em;
+  box-shadow: -10px 28px 100px 17px rgba(255, 255, 255, 1);
   background-color: $white-color;
   margin: 0 auto;
   width: 85%;
@@ -56,5 +57,5 @@
 .tasks-list-button:last-child {
   background-color: $lighter-gray-color;
   color: $middle-gray-color;
-  @include mainBorder($middle-gray-color);
+  @include mainBorder($light-gray-color);
 }

@@ -1,3 +1,151 @@
 @import "../settings/colors";
 @import "../settings/fonts";
 @import "../settings/mixins";
+
+.control-bar-section-container {
+  background-color: $middle-gray-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .3em 0;
+}
+
+.control-bar-timer-left,
+.control-bar-timer-right {
+  color: $white-color;
+  font-size: 1.4em;
+  font-weight: 500;
+  padding: 0 .5em;
+}
+
+
+.progress-bar-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .progress-bar-all {
+    width: 50em;
+    height: .5em;
+    background-color: white;
+    @include mainBorderRadius;
+    .progress-bar-fill {
+      width: 5em;
+      height: .5em;
+      background: $tomato-color;
+      @include mainBorderRadius;
+    }
+  }
+}
+
+//icons
+
+.control-bar-icon-backward {
+  background: url("../../images/controls/backward.svg");
+  &:hover {
+    background: url("../../images/controls/backward_hover.svg");
+  }
+}
+
+.control-bar-icon-play {
+background: url("../../images/controls/play.svg");
+  &:hover {
+    background: url("../../images/controls/play_hover.svg");
+  }
+}
+.control-bar-icon-pause {
+background: url("../../images/controls/pause.svg");
+  &:hover {
+    background: url("../../images/controls/pause_hover.svg");
+  }
+}
+.control-bar-icon-forward {
+background: url("../../images/controls/forward.svg");
+  &:hover {
+    background: url("../../images/controls/forward_hover.svg");
+  }
+}
+.control-bar-icon-unmute {
+background: url("../../images/controls/unmute.svg");
+  &:hover {
+    background: url("../../images/controls/unmute_hover.svg");
+  }
+}
+.control-bar-icon-muted {
+background: url("../../images/controls/muted.svg");
+  &:hover {
+    background: url("../../images/controls/muted_hover.svg");
+  }
+}
+.control-bar-icon-next-episode {
+background: url("../../images/controls/next_episode.svg");
+  &:hover {
+    background: url("../../images/controls/next_episode_hover.svg");
+  }
+}
+.control-bar-icon-live {
+background: url("../../images/controls/live.svg");
+  &:hover {
+    background: url("../../images/controls/live_hover.svg");
+  }
+}
+.control-bar-icon-fs-on {
+background: url("../../images/controls/fs_on.svg");
+  &:hover {
+    background: url("../../images/controls/fs_on_hover.svg");
+  }
+}
+.control-bar-icon-fs-off {
+background: url("../../images/controls/fs_off.svg");
+  &:hover {
+    background: url("../../images/controls/fs_off_hover.svg");
+  }
+}
+.control-bar-section-container {
+  .control-bar-icon-backward,
+  .control-bar-icon-play,
+  .control-bar-icon-pause,
+  .control-bar-icon-forward,
+  .control-bar-icon-unmute,
+  .control-bar-icon-muted,
+  .control-bar-icon-next-episode,
+  .control-bar-icon-live,
+  .control-bar-icon-fs-on,
+  .control-bar-icon-fs-off
+  {
+    width: 3.5em;
+    height: 3.5em;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 1em;
+    &:hover {
+      width: 3.5em;
+      height: 3.5em;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+
+.video-list-table-body-state {
+  .control-bar-icon-play,
+  .control-bar-icon-pause
+  {
+    width: 3.5em;
+    height: 3.5em;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 .2em;
+    &:hover {
+      width: 3.5em;
+      height: 3.5em;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
