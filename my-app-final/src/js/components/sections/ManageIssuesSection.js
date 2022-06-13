@@ -8,8 +8,6 @@ import OffcanvasBody from "react-bootstrap/OffcanvasBody";
 import Button from 'react-bootstrap/Button'
 
 
-import IssueTypeRadio from "../elements/parameters/IssueTypeRadio";
-import IssuePrioritySelect from "../elements/parameters/IssuePrioritySelect";
 
 
 const CreateTasks = () => {
@@ -30,19 +28,12 @@ const CreateTasks = () => {
                         </OffcanvasHeader>
                         <OffcanvasBody>
                             <div className="create-task-offcanvas-dropdowns">
-                                <IssueTypeRadio/>
-                                <IssuePrioritySelect/>
-
                                 <div className="create-task-env-select-box">
-
                                 </div>
                                 <div className="create-task-os-select-box">
-
                                 </div>
                                 <div className="create-task-browser-select-box">
-
                                 </div>
-
                             </div>
                             <div className="create-task-offcanvas-inputs">
 

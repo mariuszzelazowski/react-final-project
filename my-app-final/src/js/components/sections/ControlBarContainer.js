@@ -10,6 +10,7 @@ import UnmuteMuteElements from "../elements/controls/UnmuteMuteElements";
 import SeekBackwardElement from "../elements/controls/SeekBackwardElement";
 import React, {useState} from "react";
 
+
 const ControlBarContainer = () => {
     return (
         <div className="control-bar-section-container">
