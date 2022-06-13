@@ -7,7 +7,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: .3em 0;
+  padding: .5em 0;
+  @include mainBorder($blue-color);
 }
 
 .control-bar-timer-left,
@@ -18,89 +19,88 @@
   padding: 0 .5em;
 }
 
-
-.progress-bar-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .progress-bar-all {
-    width: 50em;
-    height: .5em;
-    background-color: white;
-    @include mainBorderRadius;
-    .progress-bar-fill {
-      width: 5em;
-      height: .5em;
-      background: $tomato-color;
-      @include mainBorderRadius;
-    }
-  }
-}
-
 //icons
 
 .control-bar-icon-backward {
-  background: url("../../images/controls/backward.svg");
+  background: url("../../images/controls/backward.svg") center/cover;
+
   &:hover {
-    background: url("../../images/controls/backward_hover.svg");
+    background: url("../../images/controls/backward_hover.svg") center/cover;
   }
 }
 
 .control-bar-icon-play {
-background: url("../../images/controls/play.svg");
+  background: url("../../images/controls/play.svg") center/cover;
+
   &:hover {
-    background: url("../../images/controls/play_hover.svg");
+    background: url("../../images/controls/play_hover.svg") center/cover;
   }
 }
+
 .control-bar-icon-pause {
-background: url("../../images/controls/pause.svg");
+  background: url("../../images/controls/pause.svg") center/cover;
+
   &:hover {
-    background: url("../../images/controls/pause_hover.svg");
+    background: url("../../images/controls/pause_hover.svg") center/cover;
   }
 }
+
 .control-bar-icon-forward {
-background: url("../../images/controls/forward.svg");
+  background: url("../../images/controls/forward.svg") center/cover;
+
   &:hover {
-    background: url("../../images/controls/forward_hover.svg");
+    background: url("../../images/controls/forward_hover.svg") center/cover;
   }
 }
+
 .control-bar-icon-unmute {
-background: url("../../images/controls/unmute.svg");
+  background: url("../../images/controls/unmute.svg") center/cover;
+
   &:hover {
-    background: url("../../images/controls/unmute_hover.svg");
+    background: url("../../images/controls/unmute_hover.svg") center/cover;
   }
 }
+
 .control-bar-icon-muted {
-background: url("../../images/controls/muted.svg");
+  background: url("../../images/controls/muted.svg") center/cover;
+
   &:hover {
-    background: url("../../images/controls/muted_hover.svg");
+    background: url("../../images/controls/muted_hover.svg") center/cover;
   }
 }
+
 .control-bar-icon-next-episode {
-background: url("../../images/controls/next_episode.svg");
+  background: url("../../images/controls/next_episode.svg") center/cover;
+
   &:hover {
-    background: url("../../images/controls/next_episode_hover.svg");
+    background: url("../../images/controls/next_episode_hover.svg") center/cover;
   }
 }
+
 .control-bar-icon-live {
-background: url("../../images/controls/live.svg");
+  background: url("../../images/controls/live.svg") center/cover;
+
   &:hover {
-    background: url("../../images/controls/live_hover.svg");
+    background: url("../../images/controls/live_hover.svg") center/cover;
   }
 }
-.control-bar-icon-fs-on {
-background: url("../../images/controls/fs_on.svg");
+
+.control-bar-icon-fs-turn-on {
+  background: url("../../images/controls/fs_on.svg") center/cover;
+
   &:hover {
-    background: url("../../images/controls/fs_on_hover.svg");
+    background: url("../../images/controls/fs_on_hover.svg") center/cover;
   }
 }
-.control-bar-icon-fs-off {
-background: url("../../images/controls/fs_off.svg");
+
+.control-bar-icon-fs-turn-off {
+  background: url("../../images/controls/fs_off.svg") center/cover;
+
   &:hover {
-    background: url("../../images/controls/fs_off_hover.svg");
+    background: url("../../images/controls/fs_off_hover.svg") center/cover;
   }
 }
+
 .control-bar-section-container {
   .control-bar-icon-backward,
   .control-bar-icon-play,
@@ -110,15 +110,16 @@ background: url("../../images/controls/fs_off.svg");
   .control-bar-icon-muted,
   .control-bar-icon-next-episode,
   .control-bar-icon-live,
-  .control-bar-icon-fs-on,
-  .control-bar-icon-fs-off
-  {
+  .control-bar-icon-fs-turn-on,
+  .control-bar-icon-fs-turn-off {
     width: 3.5em;
     height: 3.5em;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 0 1em;
+    padding: 0 2.5em;
+    cursor: pointer;
+
     &:hover {
       width: 3.5em;
       height: 3.5em;
@@ -132,20 +133,25 @@ background: url("../../images/controls/fs_off.svg");
 
 .video-list-table-body-state {
   .control-bar-icon-play,
-  .control-bar-icon-pause
-  {
-    width: 3.5em;
-    height: 3.5em;
+  .control-bar-icon-pause {
+    width: 1.5em;
+    height: 1.5em;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     padding: 0 .2em;
+    cursor: pointer;
+
     &:hover {
-      width: 3.5em;
-      height: 3.5em;
+      width: 1.5em;
+      height: 1.5em;
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
+    }
+
+    .control-bar-icon-tooltip {
+      visibility: hidden;
     }
   }
 }

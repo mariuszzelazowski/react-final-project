@@ -1,3 +1,70 @@
 @import "../settings/colors";
 @import "../settings/fonts";
 @import "../settings/mixins";
+
+.control-bar-section-container {
+  .control-bar-icon-backward,
+  .control-bar-icon-play,
+  .control-bar-icon-pause,
+  .control-bar-icon-forward,
+  .control-bar-icon-unmute,
+  .control-bar-icon-muted,
+  .control-bar-icon-next-episode,
+  .control-bar-icon-fs-turn-on,
+  .control-bar-icon-fs-turn-off {
+    position: relative;
+    display: inline-block;
+
+    .control-bar-icon-tooltip {
+      font-size: 1.2em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: hidden;
+      width: 5em;
+      background-color: $red-color;
+      color: $white-color;
+      text-align: center;
+      @include formsBorderRadius;
+      padding: .5em .4em;
+      position: absolute;
+      z-index: 1;
+      bottom: 127%;
+      right: -10%;
+      margin-left: -60px;
+      transition: opacity .8s;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: $red-color transparent transparent transparent;
+      }
+    }
+  }
+}
+
+.control-bar-section-container {
+  .control-bar-icon-backward,
+  .control-bar-icon-play,
+  .control-bar-icon-pause,
+  .control-bar-icon-forward,
+  .control-bar-icon-unmute,
+  .control-bar-icon-muted,
+  .control-bar-icon-next-episode,
+  .control-bar-icon-fs-turn-on,
+  .control-bar-icon-fs-turn-off {
+    &:hover .control-bar-icon-tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.tooltip:hover {
+
+}

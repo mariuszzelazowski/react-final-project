@@ -1,3 +1,6 @@
+/* autoprefixer: off */
+@import '~bootstrap/scss/bootstrap.scss';
+
 @import "generic/reset";
 
 @import "buttons/closeButtons";
@@ -15,7 +18,7 @@
 @import "elements/tooltips";
 
 @import "forms/createTasks";
-@import "forms/tasksList";
+@import "forms/tasksManager";
 
 @import "sections/base";
 @import "sections/sortFilterSection";

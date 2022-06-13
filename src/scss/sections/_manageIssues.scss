@@ -4,10 +4,10 @@
 
 
 .tasks-list-container {
-  padding-top: 1.5em;
+  margin: 0 auto 1.8em auto;
+  padding: 2em 1em .5em 1em;
   box-shadow: -10px 28px 100px 17px rgba(255, 255, 255, 1);
   background-color: $white-color;
-  margin: 0 auto;
   width: 85%;
   @include mainBorderRadius;
   display: flex;
@@ -16,7 +16,9 @@
   flex-direction: column;
 
   .section-header-title {
-    padding-bottom: .8em;
+    padding-bottom: .5em;
+    font-weight: 700;
+    font-size: 1.8em;
     color: $middle-gray-color;
 
     &:after {
@@ -31,31 +33,44 @@
     }
   }
 
-  .tasks-list-button {
-    margin-bottom: .7em;
-    width: 10em;
-    height: 1.6em;
-    background-color: $middle-gray-color;
-    @include mainBorderRadius;
-    @include mainBorder($light-gray-color);
-    font-size: 1.5em;
-    font-weight: 700;
-    color: $white-color;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-
-    &:hover {
-      background-color: $tomato-color;
-      color: $white-color;
-      @include mainBorder($light-gray-color);
-      transition: .7s;
+  .create-task-offcanvas-button {
+    .tasks-list-button {
+      background-color: $lighter-gray-color;
+      color: $blue-color;
+      &:hover {
+        background-color: $blue-color;
+        color: $white-color;
+        @include mainBorder($lighter-gray-color);
+        transition: .7s;
+      }
     }
+  }
 
+  .tasks-list-offcanvas-button {
+    .tasks-list-button {
+      background-color: $middle-gray-color;
+      color: $white-color;
+      &:hover {
+        background-color: $blue-color;
+        color: $white-color;
+        @include mainBorder($light-gray-color);
+        transition: .7s;
+      }
+    }
   }
 }
 
-.tasks-list-button:last-child {
-  background-color: $lighter-gray-color;
-  color: $middle-gray-color;
+.tasks-list-button {
+  margin: 0.3em 1em;
+  width: 10em;
+  height: 1.7em;
+  font-size: 1.5em;
+  font-weight: 700;
+
+  line-height: 2px;
+  text-transform: uppercase;
+  @include mainBorderRadius;
   @include mainBorder($light-gray-color);
+
+
 }

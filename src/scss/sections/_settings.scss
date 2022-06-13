@@ -4,18 +4,17 @@
 
 
 .settings-section-container {
-  padding-top: 1.5em;
+  padding-top: 1.3em;
   text-align: center;
 
   .section-header-title {
-    padding-bottom: .3em;
     position: relative;
 
     &:after {
       content: "";
-      width: 9em;
+      width: 10em;
       height: .1em;
-      background: $tomato-color;
+      background: $red-color;
       position: absolute;
       transform: translate(-50%, -50%);
       top: -20%;
@@ -25,23 +24,24 @@
 
   .settings-section-option-box {
     .settings-section-option-label {
-      font-size: 1.7em;
+      font-size: 1.5em;
       font-weight: 500;
       color: $lighter-gray-color;
-      padding: .5em 0 .2em 0;
-      text-shadow: 1px 0 10px rgba(255, 150, 150, 1);
+      padding: .5em 0 .1em 0;
+      text-shadow: 1px 0 10px $blue-color;
     }
   }
 }
 
 .settings-section-tooltip-form-box {
-  padding: .7em 0 .2em 0;
+  padding: .6em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.7em;
   font-weight: 500;
   color: $lighter-gray-color;
-  text-shadow: 1px 0 10px rgba(255, 150, 150, 1);
-
-
+  text-shadow: 1px 0 10px $blue-color;
 
   .settings-section-tooltip-checkbox {
     width: 1.1em;

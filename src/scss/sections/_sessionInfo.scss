@@ -4,18 +4,18 @@
 
 
 .session-info-section-container {
-  padding: 2em 0 2.5em 0;
+  padding: .7em 0 1.5em 0;
   text-align: center;
 
   .section-header-title {
-    padding-bottom: .7em;
+    padding-bottom: .5em;
     position: relative;
 
     &:after {
       content: "";
-      width: 9em;
-      height: .08em;
-      background: $tomato-color;
+      width: 10em;
+      height: .1em;
+      background: $red-color;
       position: absolute;
       transform: translate(-50%, -50%);
       top: -20%;
@@ -23,8 +23,8 @@
     }
   }
   .session-info-section-box {
-    padding-bottom: .6em;
-    font-size: 1.3em;
+    padding-bottom: .2em;
+    font-size: 1.2em;
     font-weight: 500;
     display: flex;
     justify-content: center;
