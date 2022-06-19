@@ -1,0 +1,73 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+@import "../settings/mixins";
+
+.create-task-offcanvas-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 1em;
+
+  .create-task-create-button-box {
+    .create-task-offcanvas-create-button {
+      padding: .1em 0;
+      text-transform: uppercase;
+      width: 10em;
+      color: $red-color;
+      font-size: 1.2em;
+      font-weight: 600;
+      background-color: $lighter-gray-color;
+      @include formsBorderRadius;
+      @include mainBorder($middle-gray-color);
+      letter-spacing: .1em;
+      &:hover {
+        background-color: $blue-color;
+        @include mainBorder($white-color);
+        color: $white-color;
+      }
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .create-task-offcanvas-text {
+    color: $white-color;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: .6em 0;
+    text-shadow: 2px 0 10px $blue-color;
+  }
+
+  .create-task-ticket-list-button-box {
+    .tasks-list-button {
+      padding: .1em 0;
+      text-transform: uppercase;
+      width: 10em;
+      color: $blue-color;
+      font-size: 1.2em;
+      font-weight: 600;
+      background-color: $lighter-gray-color;
+      @include formsBorderRadius;
+      @include mainBorder($middle-gray-color);
+      letter-spacing: .1em;
+      &:hover {
+        background-color: $blue-color;
+        @include mainBorder($white-color);
+        color: $white-color;
+      }
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.create-task-ticket-list-button-box {
+  .create-task-offcanvas-button {
+    display: none;
+  }
+}

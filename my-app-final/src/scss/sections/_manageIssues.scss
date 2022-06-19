@@ -4,11 +4,11 @@
 
 
 .tasks-list-container {
-  margin: 0 auto 1.8em auto;
-  padding: 2em 1em .5em 1em;
+  margin: 0 auto 1em auto;
+  padding: 2em 1em 1.2em 1em;
   box-shadow: -10px 28px 100px 17px rgba(255, 255, 255, 1);
   background-color: $white-color;
-  width: 85%;
+  width: 95%;
   @include mainBorderRadius;
   display: flex;
   justify-content: center;
@@ -32,45 +32,4 @@
       left: 50%;
     }
   }
-
-  .create-task-offcanvas-button {
-    .tasks-list-button {
-      background-color: $lighter-gray-color;
-      color: $blue-color;
-      &:hover {
-        background-color: $blue-color;
-        color: $white-color;
-        @include mainBorder($lighter-gray-color);
-        transition: .7s;
-      }
-    }
-  }
-
-  .tasks-list-offcanvas-button {
-    .tasks-list-button {
-      background-color: $middle-gray-color;
-      color: $white-color;
-      &:hover {
-        background-color: $blue-color;
-        color: $white-color;
-        @include mainBorder($light-gray-color);
-        transition: .7s;
-      }
-    }
-  }
-}
-
-.tasks-list-button {
-  margin: 0.3em 1em;
-  width: 10em;
-  height: 1.7em;
-  font-size: 1.5em;
-  font-weight: 700;
-
-  line-height: 2px;
-  text-transform: uppercase;
-  @include mainBorderRadius;
-  @include mainBorder($light-gray-color);
-
-
 }

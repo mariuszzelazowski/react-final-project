@@ -1,0 +1,30 @@
+{
+  "issueList": [
+    {
+      "ticketId": "#1",
+      "ticketType": "Bug",
+      "ticketPriority": "Critical",
+      "ticketEnv": "PROD",
+      "ticketOS": "Windows",
+      "ticketBrowser": "Chrome",
+      "ticketTitle": "Unnecessary Next Episode Button",
+      "ticketDescription": "Unnecessary Next Episode Button on LIVE contentUnnecessary Next Episode Button on LIVE contentUnnecessary Next Episode Button on LIVE contentUnnecessary Next Episode Button on LIVE content,Unnecessary Next Episode Button on LIVE content,Unnecessary Next Episode Button on LIVE content,Unnecessary Next Episode Button on LIVE content,Unnecessary Next Episode Button on LIVE content,Unnecessary Next Episode Button on LIVE content",
+      "ticketStatus": "DONE",
+      "ticketCreateDate": "01.01.2022",
+      "ticketEndDate": "31.01.2022"
+    },
+    {
+      "ticketId": "#2",
+      "ticketType": "Task",
+      "ticketPriority": "Low",
+      "ticketEnv": "STAGE",
+      "ticketOS": "macOS",
+      "ticketBrowser": "Safari",
+      "ticketTitle": "Unnecessary LIVE Button",
+      "ticketDescription": "Unnecessary LIVE Button on VOD content",
+      "ticketStatus": "In progress",
+      "ticketCreateDate": "12.01.2022",
+      "ticketEndDate": ""
+    }
+  ]
+}

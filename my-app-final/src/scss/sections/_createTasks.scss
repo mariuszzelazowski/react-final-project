@@ -1,0 +1,167 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+@import "../settings/mixins";
+
+.offcanvas {
+  font-family: $oswald-font;
+  height: 340px;
+
+  .create-task-offcanvas {
+    background-color: $blue-color;
+    box-shadow: 13px 47px 100px 40px $blue-color;
+
+    .create-task-offcanvas-container {
+      background-color: $light-gray-color;
+      margin: 0 .65em;
+      @include mainBorder($lighter-gray-color);
+      @include differentBorderRadius(0, 0, 1em, 1em);
+
+      .create-task-offcanvas-header {
+        padding: .4em .6em;
+        border-bottom: .01em solid $blue-color;
+
+        .create-task-offcanvas-header-title {
+          padding-left: .7em;
+          font-size: 1.6em;
+          font-weight: 700;
+          color: $blue-color;
+          text-transform: uppercase;
+          letter-spacing: .1em;
+        }
+      }
+    }
+  }
+}
+
+.create-task-form {
+  display: flex;
+
+  .create-task-offcanvas-dropdowns {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.create-task-type-box,
+.create-task-priority-box,
+.create-task-env-box,
+.create-task-os-box,
+.create-task-browser-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin: 1em 0 0 0;
+}
+
+.create-task-box-title {
+  color: $white-color;
+  font-weight: 600;
+  font-size: 1em;
+  margin-left: 2em;
+  text-transform: uppercase;
+  text-shadow: 2px 0 10px $blue-color;
+
+  &::after {
+    content: "*";
+    color: $red-color;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+}
+
+.create-task-box-select-box-title {
+  color: $dark-gray-color;
+  font-weight: 400;
+  padding: .2em;
+  margin-left: 1em;
+  width: 9em;
+  border: .01em solid $blue-color;
+  cursor: pointer;
+
+
+  .create-task-box-option-text {
+    color: $dark-gray-color;
+    font-weight: 400;
+    font-size: 1em;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $blue-color;
+    }
+  }
+}
+
+.create-task-priority-box {
+  .create-task-box-select-box-title {
+    .create-task-box-option-text {
+      &:nth-of-type(1) {
+        color: red;
+      }
+
+      &:nth-of-type(2) {
+        color: orange;
+      }
+
+      &:nth-of-type(3) {
+        color: yellow;
+      }
+
+      &:nth-of-type(4) {
+        color: green;
+      }
+
+      &:nth-of-type(5) {
+        color: lightgreen;
+      }
+    }
+  }
+}
+
+.create-task-offcanvas-inputs {
+  margin-left: 3em;
+
+  .create-task-title-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 1em 0 0 0;
+
+    .create-task-box-title {
+
+    }
+
+    .create-task-box-input {
+      width: 45em;
+      padding: .2em;
+      margin-left: 1.5em;
+      border: .01em solid $blue-color;
+      color: $middle-gray-color;
+    }
+  }
+
+  .create-task-description-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 1em 0 0 0;
+
+    .create-task-box-textarea {
+      width: 45em;
+      height: 11.5em;
+      padding: .2em;
+      margin-left: 1.5em;
+      border: .01em solid $blue-color;
+      color: $middle-gray-color;
+      resize: none;
+    }
+  }
+}
+
+.create-task-offcanvas-buttons-header {
+  padding: .6em 0 1.6em 0;
+  font-size: 1.6em;
+  font-weight: 700;
+  color: $white-color;
+  text-transform: uppercase;
+  text-shadow: 2px 0 10px $blue-color;
+}

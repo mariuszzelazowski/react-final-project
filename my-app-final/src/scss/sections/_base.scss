@@ -7,16 +7,12 @@
   font-size: 10px;
 }
 
-body {
-  font-family: $oswald-font;
-
-}
-
 a {
   text-decoration: none;
 }
 
 .App {
+  font-family: $oswald-font;
   margin: 1em;
   display: flex;
   box-shadow: 13px 47px 100px 40px $blue-color;

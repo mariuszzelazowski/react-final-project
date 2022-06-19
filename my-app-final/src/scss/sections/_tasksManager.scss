@@ -1,0 +1,166 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+@import "../settings/mixins";
+
+
+.offcanvas {
+  height: 338px;
+  background: $white-color;
+
+  .tasks-manager-offcanvas {
+    background-color: $blue-color;
+    box-shadow: 13px 47px 100px 40px $blue-color;
+
+    .tasks-manager-offcanvas-container {
+      background-color: $light-gray-color;
+      margin: 0 .65em;
+      @include mainBorder($light-gray-color);
+      @include differentBorderRadius(0, 0, 1em, 1em);
+
+      .tasks-manager-offcanvas-header {
+        padding: .4em .6em;
+        border-bottom: .01em solid $blue-color;
+
+        .tasks-manager-offcanvas-header-title {
+          padding-left: .7em;
+          font-size: 1.6em;
+          font-weight: 700;
+          color: $blue-color;
+          text-transform: uppercase;
+          letter-spacing: .1em;
+        }
+      }
+
+      .tasks-manager-offcanvas-body {
+        padding: .8em;
+        height: 17.5em;
+        overflow: auto;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.tasks-manager-issue-list-box {
+
+  .tasks-manager-issue-list-element {
+    background-color: $lighter-gray-color;
+    border-bottom: .01em solid $blue-color;
+
+    .tasks-manager-issue-list-element-header {
+
+
+      .accordion-button {
+        font-size: 1.1em;
+        background-color: $lighter-gray-color;
+        padding: .6em 2em;
+        color: $dark-gray-color;
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+.tasks-manager-issue-list-element-body {
+  display: flex;
+
+  .tasks-manager-issue-parameters-box {
+    display: flex;
+    flex-direction: column;
+
+    .tasks-manager-issue-parameters-el-box {
+      padding-bottom: .3em;
+      display: flex;
+      justify-content: flex-start;
+
+      .tasks-manager-issue-parameters-el-name {
+        text-transform: uppercase;
+        color: $white-color;text-align: right;
+        width: 6em;
+        text-shadow: 2px 0 10px $blue-color;
+      }
+
+      .tasks-manager-issue-parameters-el-value {
+        padding-left: 1em;
+        color: $dark-gray-color;
+      }
+    }
+  }
+
+  .tasks-manager-issue-description-box {
+    display: flex;
+    padding-left: 3em;
+    padding-bottom: .3em;
+
+    .tasks-manager-issue-description-el-name {
+      text-transform: uppercase;
+      color: $white-color;
+      width: 6em;
+      text-shadow: 2px 0 10px $blue-color;
+    }
+
+    .tasks-manager-issue-parameters-el-value {
+      padding-left: 1em;
+      max-width: 35em;
+      min-width: 35em;
+      color: $dark-gray-color;
+    }
+  }
+
+  .tasks-manager-issue-status-box {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3em;
+
+    .tasks-manager-issue-status-el-box {
+      display: flex;
+      padding-bottom: .3em;
+
+      .tasks-manager-issue-status-el-name {
+        text-transform: uppercase;
+        text-align: right;
+        color: $white-color;
+        width: 6em;
+        text-shadow: 2px 0 10px $blue-color;
+      }
+
+      .tasks-manager-issue-status-el-value {
+        padding-left: 1em;
+        color: $dark-gray-color;
+      }
+    }
+  }
+
+  .tasks-manager-issue-action-box {
+    display: flex;
+    flex-direction: column;
+    padding-left: 6em;
+    padding-bottom: .3em;
+
+    .tasks-manager-issue-action-header {
+      text-transform: uppercase;
+      color: $white-color;
+      text-shadow: 2px 0 10px $blue-color;
+      font-size: 1.5em;
+    }
+
+    .tasks-manager-issue-action-title {
+      padding: .2em;
+      margin-top: .5em;
+      font-size: 1em;
+      text-transform: uppercase;
+      border: .01em solid $blue-color;
+      cursor: pointer;
+      color: $dark-gray-color;
+      .tasks-manager-issue-action-option {
+        text-transform: uppercase;
+        font-size: 1em;
+        color: $dark-gray-color;
+      }
+    }
+  }
+}

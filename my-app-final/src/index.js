@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {ChakraProvider} from '@chakra-ui/react'
+import PlaylistApiService from "./js/services/PlaylistApiSerice";
 
 import './scss/index.scss';
 
@@ -11,6 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <ChakraProvider>
+            <PlaylistApiService/>
             <App/>
         </ChakraProvider>
     </React.StrictMode>

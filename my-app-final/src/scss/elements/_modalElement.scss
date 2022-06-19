@@ -1,0 +1,34 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+@import "../settings/mixins";
+
+.modal-content {
+  background-color: $light-gray-color;
+
+  .create-task-modal-header {
+    border-bottom: .01em solid $blue-color;
+
+    .create-task-modal-header-title {
+      padding-left: 6.5em;
+      font-size: 1.4em;
+      font-weight: 700;
+      color: $blue-color;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      text-align: center;
+    }
+  }
+
+  .create-task-modal-body-text {
+    color: $white-color;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-bottom: .01em solid $blue-color;
+    text-align: center;
+    text-shadow: 2px 0 10px $blue-color;
+  }
+
+  .create-task-modal-footer {
+    border: none;
+  }
+}

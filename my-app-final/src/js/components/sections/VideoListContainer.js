@@ -4,27 +4,31 @@ import PausePlayElements from "../elements/controls/PausePlayElements";
 
 const VideoListHeader = () => {
     return (
-        <thead className="video-list-table-header">
-        <tr className="video-list-table-header-row">
-            <th className="video-list-table-header-state">#</th>
-            <th className="video-list-table-header-title">title</th>
-            <th className="video-list-table-header-type">type</th>
-            <th className="video-list-table-header-duration">duration</th>
-        </tr>
-        </thead>
+        <>
+            <thead className="video-list-table-header">
+            <tr className="video-list-table-header-row">
+                <th className="video-list-table-header-state">#</th>
+                <th className="video-list-table-header-title">title</th>
+                <th className="video-list-table-header-type">type</th>
+                <th className="video-list-table-header-duration">duration</th>
+            </tr>
+            </thead>
+        </>
     );
 };
 
 const VideoListItem = ({item}) => {
     return (
-        <tr className="video-list-table-body-row">
-            <td className="video-list-table-body-state">
-            <PausePlayElements/>
-            </td>
-            <td className="video-list-table-body-title-value">{item.title}</td>
-            <td className="video-list-table-body-type-value">{item.type}</td>
-            <td className="video-list-table-body-duration-value">{item.duration}</td>
-        </tr>
+        <>
+            <tr className="video-list-table-body-row">
+                <td className="video-list-table-body-state">
+                    <PausePlayElements/>
+                </td>
+                <td className="video-list-table-body-title-value">{item.title}</td>
+                <td className="video-list-table-body-type-value">{item.type}</td>
+                <td className="video-list-table-body-duration-value">{item.duration}</td>
+            </tr>
+        </>
     );
 };
 

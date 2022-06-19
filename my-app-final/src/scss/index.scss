@@ -4,9 +4,11 @@
 @import "generic/reset";
 
 @import "buttons/closeButtons";
-@import "buttons/createTasksButtons";
-@import "buttons/manageIssueButtons";
 @import "buttons/settingsButtons";
+@import "buttons/modalButtons";
+@import "buttons/manageIssueButtons";
+@import "buttons/createTaskButtons";
+@import "buttons/tasksManagerButton";
 
 @import "elements/controlBar";
 @import "elements/controlIcons";
@@ -16,9 +18,7 @@
 @import "elements/sectionsTitle";
 @import "elements/statusDropdown";
 @import "elements/tooltips";
-
-@import "forms/createTasks";
-@import "forms/tasksManager";
+@import "elements/modalElement";
 
 @import "sections/base";
 @import "sections/sortFilterSection";
@@ -30,6 +30,8 @@
 @import "sections/videoContainer";
 @import "sections/videosList";
 @import "sections/preLoadingPage";
+@import "sections/createTasks";
+@import "sections/tasksManager";
 
 @import "settings/colors";
 @import "settings/fonts";

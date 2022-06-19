@@ -1,15 +1,14 @@
 import React, {useEffect, useState} from "react";
 
 const PlaylistApiService = () => {
-
-    const [value, setValue] = useState(null)
+    const [values, setValues] = useState([]);
 
     useEffect(() => {
-        fetch("https://d3mpvzein3znbf.cloudfront.net/api/playlists/")
+        fetch("https://d3mpvzein3znbf.cloudfront.net/api/playlists/?format=json&id")
             .then(response => response.json())
-            .then(data => console.log(data[0].value.movie.video.sources.dash.is_uhd))
+            .then((data => data.map((el) => (console.log(el)))))
             .catch(err => console.warn(err))
-    }, []);
+    });
 };
 
 export default PlaylistApiService;

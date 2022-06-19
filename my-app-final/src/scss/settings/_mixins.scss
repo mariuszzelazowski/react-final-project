@@ -17,7 +17,7 @@
 }
 
 @mixin differentBorderRadius($radius-left-top, $radius-right-top, $radius-left-bottom, $radius-right-bottom) {
-  border-radius: $radius-left-top;
+  border-top-left-radius: $radius-left-top;
   border-top-right-radius: $radius-right-top;
   border-bottom-left-radius: $radius-left-bottom;
   border-bottom-right-radius: $radius-right-bottom;

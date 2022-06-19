@@ -1,3 +1,56 @@
 @import "../settings/colors";
 @import "../settings/fonts";
 @import "../settings/mixins";
+
+
+.create-task-offcanvas-button {
+  .tasks-list-button {
+    background-color: $lighter-gray-color;
+    color: $red-color;
+    @include mainBorder($middle-gray-color);
+
+    &:hover {
+      background-color: $blue-color;
+      color: $white-color;
+      @include mainBorder($white-color);
+      transition: .7s;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.tasks-list-offcanvas-button {
+  .tasks-list-button {
+    background-color: $lighter-gray-color;
+    color: $blue-color;
+
+    &:hover {
+      background-color: $blue-color;
+      color: $white-color;
+      @include mainBorder($white-color);
+      transition: .7s;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.tasks-list-button {
+  margin: 0.3em 1em;
+  width: 12em;
+  height: 1.7em;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: .1em;
+  line-height: 2px;
+  text-transform: uppercase;
+  @include formsBorderRadius;
+  @include mainBorder($middle-gray-color);
+}

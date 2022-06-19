@@ -1,0 +1,22 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+@import "../settings/mixins";
+
+
+.tasks-manager-issue-action-button {
+  margin-top: 1em;
+  color: $red-color;
+  @include mainBorder($light-gray-color);
+  background-color: $white-color;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  @include formsBorderRadius;
+  font-size: 1.2em;
+  font-weight: 600;
+  &:hover {
+    background-color: $blue-color;
+    color: $white-color;
+    @include mainBorder($white-color);
+    transition: .7s;
+  }
+}
